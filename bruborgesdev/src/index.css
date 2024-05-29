@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.border-animation {
+    position: relative;
+  }
+  
+  .border-animation::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; 
+    left: 0;
+    bottom: 0;
+    background-color: #A5B4FC;
+    transition: width 0.3s ease;
+  }
+  
+  .border-animation:hover::after {
+    width: 100%;
+  }
