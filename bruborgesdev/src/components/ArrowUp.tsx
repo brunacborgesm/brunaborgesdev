@@ -29,7 +29,7 @@ export const ArrowUp: React.FC = () => {
   }, []);
 
   return (
-    <div className="fixed bottom-24 right-6">
+    <div className="fixed bottom-52 right-5">
       {isVisible && (
         <button
           type="button"

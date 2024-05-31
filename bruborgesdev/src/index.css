@@ -26,6 +26,10 @@ html {
     width: 100%;
   }
 
+  .icon-size {
+    @apply text-4xl;
+  }
+
   /*
         <img src="src/assets/elements/dots.png" alt="" className="absolute w-60 top-2/3 left-0" />
       <img src="src/assets/elements/x.png" alt="" className="absolute w-16 right-40 top-64" />

@@ -1,6 +1,5 @@
 import { Header } from "./components/Header"
 import { Footer } from "./components/Footer"
-import { ArrowUp } from "./components/ArrowUp"
 import { CoreContent } from "./pages/CoreContent"
 
 export const App = () => {
@@ -9,9 +8,6 @@ export const App = () => {
       <div>
       <Header />
       <CoreContent />
-      <ArrowUp />
-
-
       </div>
       <Footer />
     </div>
