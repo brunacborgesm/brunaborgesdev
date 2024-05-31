@@ -11,7 +11,7 @@ export const Header = () => {
   };
 
   return (
-    <header className='flex justify-between items-center p-4 bg-cl-purple'>
+    <header className='flex justify-between items-center p-6 bg-cl-purple'>
 
       <div >
         <a href="#home">
@@ -23,12 +23,12 @@ export const Header = () => {
       </div>
 
       <div className="md:hidden">
-        <button onClick={toggleMenu} className="text-3xl">
+        <button onClick={toggleMenu}>
           {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
         </button>
         {isMenuOpen && (
-          <div className="absolute top-16 left-0 w-full bg-gray-900 p-5 flex flex-col items-center">
-            <ul className="flex flex-col gap-5 w-full items-center">
+          <div className="absolute top-24 right-4 w-6/12 backdrop-blur-md border border-cl-purple rounded-3xl py-10 px-5 flex flex-col items-center text-xl">
+            <ul className="flex flex-col gap-6 w-full items-center">
               <li className="hover:text-cl-green border-animation">
                 <a href="#home" onClick={() => setIsMenuOpen(false)}>{'<home>'}</a>
               </li>
@@ -42,7 +42,6 @@ export const Header = () => {
                 <a href="#contact" onClick={() => setIsMenuOpen(false)}>{'<contato>'}</a>
               </li>
             </ul>
-            <DefaultButton url="#contact" text="Entre em contato" />
           </div>
         )}
       </div>
