@@ -1,33 +1,53 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { DefaultButton } from './DefaultButton';
+import CloseIcon from '@mui/icons-material/Close';
+import MenuIcon from '@mui/icons-material/Menu';
 
 export const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
-    <header className={`md:sticky flex w-full items-center justify-between  md:border md:rounded-full md:py-3 md:px-6 md:${isScrolled ? 'fixed top-2 left-0 w-full backdrop-blur-md bg-opacity-60 bg-gray-900 z-10 border rounded-full' : ''}`}>
-      <div>
+    <header className='flex justify-between items-center p-4 bg-cl-purple'>
+
+      <div >
         <a href="#home">
-          <img className="md:hidden w-12 h-8 ml-4" src='src/assets/bb-logo.png' alt="" />
-          <h1 className="hidden md:block text-2xl text-cl-lavander"><span className="text-cl-green">bru.</span>borges</h1>
+          <img className="md:hidden w-12 h-8" src='src/assets/bb-logo.png' alt="" />
+          <h1 className="hidden md:block text-2xl text-cl-lavander">
+            <span className="text-cl-green">bru.</span>borges
+          </h1>
         </a>
       </div>
-      <ul className="flex gap-10">
+
+      <div className="md:hidden">
+        <button onClick={toggleMenu} className="text-3xl">
+          {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
+        </button>
+        {isMenuOpen && (
+          <div className="absolute top-16 left-0 w-full bg-gray-900 p-5 flex flex-col items-center">
+            <ul className="flex flex-col gap-5 w-full items-center">
+              <li className="hover:text-cl-green border-animation">
+                <a href="#home" onClick={() => setIsMenuOpen(false)}>{'<home>'}</a>
+              </li>
+              <li className="hover:text-cl-green border-animation">
+                <a href="#about_me" onClick={() => setIsMenuOpen(false)}>{'<sobre mim>'}</a>
+              </li>
+              <li className="hover:text-cl-green border-animation">
+                <a href="#projects" onClick={() => setIsMenuOpen(false)}>{'<projetos>'}</a>
+              </li>
+              <li className="hover:text-cl-green border-animation">
+                <a href="#contact" onClick={() => setIsMenuOpen(false)}>{'<contato>'}</a>
+              </li>
+            </ul>
+            <DefaultButton url="#contact" text="Entre em contato" />
+          </div>
+        )}
+      </div>
+
+      <ul className="hidden md:flex gap-10">
         <li className="hover:text-cl-green border-animation">
           <a href="#home">{'<home>'}</a>
         </li>
@@ -41,7 +61,10 @@ export const Header = () => {
           <a href="#contact">{'<contato>'}</a>
         </li>
       </ul>
-      <DefaultButton url="#contact" text="Entre em contato" />
+
+      <div className="hidden md:block">
+        <DefaultButton url="#contact" text="Entre em contato" />
+      </div>
     </header>
   );
-};
+}
