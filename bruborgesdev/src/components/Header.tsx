@@ -46,7 +46,7 @@ export const Header = () => {
         )}
       </div>
 
-      <ul className="hidden md:flex gap-10">
+      <ul className="hidden md:flex gap-5 ">
         <li className="hover:text-cl-green border-animation">
           <a href="#home">{'<home>'}</a>
         </li>
