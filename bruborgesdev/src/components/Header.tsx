@@ -11,7 +11,7 @@ export const Header = () => {
   };
 
   return (
-    <header className='flex justify-between items-center p-6 bg-cl-purple'>
+    <header  id="home" className='flex justify-between items-center p-6 bg-cl-purple'>
 
       <div >
         <a href="#home">

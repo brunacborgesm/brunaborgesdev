@@ -13,7 +13,7 @@ interface ProjectCardProps {
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({ img, title, description, tags, git, url }) => {
     return (
-        <div className='w-56 h-96 flex flex-col pb-8'>
+        <div className='md:w-56 w-60 h-96 flex flex-col pb-8'>
             <div className='bg-cl-lavander py-10 px-3 rounded-xl flex flex-col items-center text-center'>
                 <a href={ url }>
                     <img src={img} className='w-48 h-28 border border-cl-green rounded-md overflow-hidden hover:scale-150 cursor-pointer duration-300'  alt="Project image" />

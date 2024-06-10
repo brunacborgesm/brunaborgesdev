@@ -9,6 +9,20 @@ export const App = () => {
         <Header />
         <CoreContent />
         <Footer />
+
+        
+        <img src="src/assets/elements/dots.png" alt="" className="absolute max-w-28 md:max-w-60 top-1/4 md:top-3/4 left-0" />
+
+        <img src="src/assets/elements/x.png" alt="" className="absolute max-w-10 md:max-w-16 md:right-52 right-12 top-[350px] md:top-32" />
+
+        <img src="src/assets/elements/balls.png" alt="" className="absolute top-[780px] md:top-[900px] -right-0 max-w-32 md:max-w-full" />
+
+        <img src="src/assets/elements/x.png" alt="" className="absolute max-w-10 md:max-w-16 top-[2355px] md:top-[1050px] left-3 md:left-72" />
+
+        <img src="src/assets/elements/dots.png" alt="" className="absolute max-w-28 md:max-w-60 top-[1700px] md:top-[1600px] rotate-180 right-0" />
+
+        <img src="src/assets/elements/balls.png" alt="" className="absolute top-[3200px] md:top-[1400px] left-0 max-w-28 rotate-180 md:max-w-full" />
+
       </div>
     </div>
   )

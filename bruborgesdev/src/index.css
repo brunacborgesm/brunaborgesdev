@@ -8,32 +8,24 @@ html {
 }
 
 .border-animation {
-    position: relative;
-  }
-  
-  .border-animation::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px; 
-    left: 0;
-    bottom: 0;
-    background-color: #A5B4FC;
-    transition: width 0.3s ease;
-  }
-  
-  .border-animation:hover::after {
-    width: 100%;
-  }
+  position: relative;
+}
 
-  .icon-size {
-    @apply text-4xl;
-  }
+.border-animation::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #A5B4FC;
+  transition: width 0.3s ease;
+}
 
-  /*
-        <img src="src/assets/elements/dots.png" alt="" className="absolute w-60 top-2/3 left-0" />
-      <img src="src/assets/elements/x.png" alt="" className="absolute w-16 right-40 top-64" />
-      <img src="src/assets/elements/balls.png" alt="" className="absolute top-[1200px] -right-0" />
-      <img src="src/assets/elements/x.png" alt="" className="absolute w-16 top-[1450px] -left-54" />
-      <img src="src/assets/elements/dots.png" alt="" className="absolute w-60 top-[1850px] -right-40" />
-  */
+.border-animation:hover::after {
+  width: 100%;
+}
+
+.icon-size {
+  @apply text-4xl;
+}
