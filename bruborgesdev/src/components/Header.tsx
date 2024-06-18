@@ -11,16 +11,11 @@ export const Header = () => {
   };
 
   return (
-    <header  id="hero" className='flex justify-between items-center p-6 bg-cl-purple'>
+    <header id="hero" className='flex justify-between items-center p-6 bg-cl-purple'>
 
-      <div >
-        <a href="#hero">
-          <img className="md:hidden w-12 h-8" src='src/assets/bb-logo.png' alt="" />
-          <h1 className="hidden md:block text-2xl text-cl-lavander">
-            <span className="text-cl-green">bru.</span>borges
-          </h1>
-        </a>
-      </div>
+      <a href="#hero">
+        <img className="w-12 h-8" src='src/assets/bb-logo.png' alt="" />
+      </a>
 
       <div className="md:hidden">
         <button onClick={toggleMenu}>

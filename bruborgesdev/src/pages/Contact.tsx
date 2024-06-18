@@ -2,7 +2,7 @@ import { SocialButton } from "../components/SocialButton"
 
 import linkedin from "../assets/linkedin.png"
 import gmail from "../assets/gmail.png"
-import github from "../assets/linkedin.png"
+import github from "../assets/github.png"
 
 export const Contact = () => {
     return (
