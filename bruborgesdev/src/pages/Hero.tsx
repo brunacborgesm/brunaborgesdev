@@ -1,4 +1,6 @@
-export const Home = () => {
+import profileimg from "../assets/profileimg.png"
+
+export const Hero = () => {
     return (
         <div className="my-20 h-full">
             <div className="flex flex-col items-center justify-center gap-4 md:gap-7 md:flex-row">
@@ -9,7 +11,7 @@ export const Home = () => {
                     <span className="text-right mt-2 text-cl-green"> {'</developer>'} </span>
                 </div>
 
-                <img className="w-max-w-96 h-max-w-96 md:w-80 md:h-80" src="src/assets/profileimg.png" alt="" />
+                <img className="w-max-w-96 h-max-w-96 md:w-80 md:h-80" src={ profileimg } alt="" />
 
                 <div className="flex flex-col text-center lg:max-w-96">
                     <h2 className="text-3xl font-title text-cl-green">Full-stack Developer</h2>

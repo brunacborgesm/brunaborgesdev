@@ -1,39 +1,48 @@
 import Marquee from 'react-fast-marquee';
 
+import html from "../assets/techs/html.png"
+import css from "../assets/techs/css.png"
+import js from "../assets/techs/js.png"
+import react from "../assets/techs/react.png"
+import ts from "../assets/techs/ts.png"
+import tailwind from "../assets/techs/tailwind.png"
+import mui from "../assets/techs/material.png"
+import node from "../assets/techs/node.png"
+
 export const TechSlider = () => {
   return (
     <Marquee className='bg-transparent border-t border-t-cl-lavander border-b border-b-cl-lavander w-full overflow-hidden autoFill hover:pause py-2'>
       
       <div className='cursor-pointer'>
-        <img src="src/assets/techs/html.png" alt="html icon" />
+        <img src={ html } alt="html icon" />
       </div>
 
       <div className='cursor-pointer px-2'>
-        <img src="src/assets/techs/css.png" alt="css icon" />
+        <img src={ css } alt="css icon" />
       </div>
 
       <div className='cursor-pointer px-2'>
-        <img src="src/assets/techs/js.png" alt="javascript icon" />
+        <img src={ js } alt="javascript icon" />
       </div>
 
       <div className='cursor-pointer px-2'>
-        <img src="src/assets/techs/react.png" alt="react icon" />
+        <img src={ react } alt="react icon" />
       </div>
 
       <div className='cursor-pointer px-2'>
-        <img src="src/assets/techs/ts.png" alt="typescript icon" />
+        <img src={ ts } alt="typescript icon" />
       </div>
 
       <div className='cursor-pointer px-2'>
-        <img src="src/assets/techs/tailwind.png" alt="tailwind icon" />
+        <img src={ tailwind } alt="tailwind icon" />
       </div>
 
       <div className='cursor-pointer px-4 py-8'>
-        <img className='w-16 h-16' src="src/assets/techs/material.png" alt="material ui icon" />
+        <img className='w-16 h-16' src={ mui } alt="material ui icon" />
       </div>
 
       <div className='cursor-pointer px-2'>
-        <img src="src/assets/techs/node.png" alt="node icon" />
+        <img src={ node } alt="node icon" />
       </div>
 
     </Marquee>

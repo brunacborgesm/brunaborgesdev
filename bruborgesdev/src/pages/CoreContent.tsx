@@ -1,13 +1,13 @@
 import { ArrowUp } from "../components/ArrowUp"
 import { AboutMe } from "./AboutMe"
 import { Contact } from "./Contact"
-import { Home } from "./Home"
+import { Hero } from "./Hero"
 import { Projects } from "./Projects"
 
 export const CoreContent = () => {
   return (
     <div className="px-8 md:px-10">
-        <Home />
+        <Hero />
         <AboutMe />
         <Projects />
         <Contact />
