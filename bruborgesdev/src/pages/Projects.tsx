@@ -8,11 +8,11 @@ export const Projects = () => {
             <div className="flex flex-col md:flex-row md:justify-center gap-6 md:gap-8 md:flex-wrap">
                 <ProjectCard
                     img="src/assets/linkedin.png"
-                    title="Projeto 1"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                    tags={['teste', 'teste']}
-                    git=""
-                    url=""
+                    title="To Do App"
+                    description="App de lista de tarefas."
+                    tags={['react', 'javascript', 'tailwind']}
+                    git="https://github.com/brunacborgesm/to-do"
+                    url="https://brunacborgesm.github.io/to-do/"
                 />
 
                 <ProjectCard
