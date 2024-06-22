@@ -29,12 +29,12 @@ export const ArrowUp: React.FC = () => {
   }, []);
 
   return (
-    <div className="fixed bottom-24 right-5">
+    <div className="fixed bottom-24 right-2">
       {isVisible && (
         <button
           type="button"
           onClick={scrollToTop}
-          className="p-3 rounded-full bg-cl-green text-cl-purple hover:bg-cl-lavander transition-all duration-300"
+          className="p-1 rounded-full bg-cl-green text-cl-purple hover:bg-cl-lavander transition-all duration-300"
         >
           <KeyboardArrowUpIcon />
         </button>
