@@ -11,7 +11,7 @@ export const Projects = () => {
                 <ProjectCard
                     img={ todoimg }
                     title="To Do App"
-                    description="App de lista de tarefas."
+                    description="App de lista de tarefas, com botões de mover e excluir"
                     tags={['react', 'javascript', 'tailwind']}
                     git="https://github.com/brunacborgesm/to-do-app"
                     url="https://brunacborgesm.github.io/to-do-app/"
