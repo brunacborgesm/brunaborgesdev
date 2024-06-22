@@ -15,7 +15,7 @@ export const Contact = () => {
 
                 <SocialButton text="@brunacborgesm" social="GitHub" img={ github } url={"https://github.com/brunacborgesm/"} />
 
-                <SocialButton text="brunaborgesdev@gmail.com" social="Gmail" img={ gmail } url={"https://github.com/brunacborgesm?tab=repositories"} />
+                <SocialButton text="brunaborgesdev@gmail.com" social="Gmail" img={ gmail } url={"mailto:brunaborgesdev@gmail.com"} />
 
             </div>
 
