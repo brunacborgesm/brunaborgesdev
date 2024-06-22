@@ -54,9 +54,6 @@ export const Header = () => {
           <li className="hover:text-cl-green border-animation">
             <a href="#projects">{'<projetos>'}</a>
           </li>
-          <li className="hover:text-cl-green border-animation">
-            <a href="#contact">{'<contato>'}</a>
-          </li>
         </ul>
       
 
