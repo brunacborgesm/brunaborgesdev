@@ -1,5 +1,7 @@
 import { ProjectCard } from "../components/ProjectCard";
 
+import todoimg from '../assets/project-img/todo-app.png'
+
 export const Projects = () => {
     return (
         <div id="projects" className="h-full py-32 flex flex-col items-center justify-center">
@@ -7,12 +9,12 @@ export const Projects = () => {
 
             <div className="flex flex-col md:flex-row md:justify-center gap-6 md:gap-8 md:flex-wrap">
                 <ProjectCard
-                    img="src/assets/linkedin.png"
+                    img={ todoimg }
                     title="To Do App"
                     description="App de lista de tarefas."
                     tags={['react', 'javascript', 'tailwind']}
-                    git="https://github.com/brunacborgesm/to-do"
-                    url="https://brunacborgesm.github.io/to-do/"
+                    git="https://github.com/brunacborgesm/to-do-app"
+                    url="https://brunacborgesm.github.io/to-do-app/"
                 />
 
                 <ProjectCard
