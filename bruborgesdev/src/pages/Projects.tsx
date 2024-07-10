@@ -8,6 +8,7 @@ export const Projects = () => {
             <h1 className="text-4xl font-title text-cl-green flex flex-col justify-center pb-20">Projetos</h1>
 
             <div className="flex flex-col md:flex-row md:justify-center gap-6 md:gap-8 md:flex-wrap">
+                
                 <ProjectCard
                     img={ todoimg }
                     title="To Do App"
@@ -34,6 +35,7 @@ export const Projects = () => {
                     git=""
                     url=""
                 />
+                
             </div>
         </div>
     )

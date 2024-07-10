@@ -19,7 +19,12 @@ export default {
         'cl-white': '#F7FFF7',
         'cl-black': '#111827',
         'cl-full-black': '#020617',
-      }
+      },
+
+      backgroundImage: {
+        'custom-dk': "url('./src/assets/bg1.png')",
+        'custom-mb': "url('./src/assets/bg2.png')",
+      },
     },
   },
   plugins: [],

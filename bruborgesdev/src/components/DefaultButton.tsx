@@ -9,7 +9,7 @@ interface CustomButtonProps {
 export const DefaultButton: React.FC<CustomButtonProps> =({ text, url, icon }) => {
   return (
     <button className="border border-cl-green rounded-full py-2 px-4 hover:bg-cl-green hover:text-cl-purple-2 hover:ease-in hover:duration-300">
-        <a className='items-center flex gap-1' href={ url } target='_blank'>
+        <a className='items-center flex gap-1' href={ url }>
           { icon && icon }
           { text } 
         </a>
