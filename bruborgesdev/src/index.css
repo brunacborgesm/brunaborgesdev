@@ -26,6 +26,22 @@ html {
   width: 100%;
 }
 
+.fordesktop {
+  background-image: url('./assets/bg1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.formobile {
+  background-image: url('./assets/bg1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
 .icon-size {
   @apply text-4xl;
 }

@@ -22,8 +22,8 @@ export default {
       },
 
       backgroundImage: {
-        'custom-dk': "url('./src/assets/bg1.png')",
-        'custom-mb': "url('./src/assets/bg2.png')",
+        'custom-dk': "url('./assets/bg1.png')",
+        'custom-mb': "url('./assets/bg2.png')",
       },
     },
   },
