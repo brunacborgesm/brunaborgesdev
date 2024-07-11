@@ -25,6 +25,17 @@ export default {
         'custom-dk': "url('./assets/bg1.png')",
         'custom-mb': "url('./assets/bg2.png')",
       },
+
+      animation: {
+        'spin-y': 'spin-y 1s linear',
+      },
+      keyframes: {
+        'spin-y': {
+          '0%': { transform: 'rotateY(0deg)' },
+          '100%': { transform: 'rotateY(180deg)' },
+        },
+      },
+    
     },
   },
   plugins: [],
